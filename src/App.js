@@ -19,6 +19,9 @@ class App extends React.Component {
           break;
         case "customOAuthState":
           this.setState({ customState: data });
+          break;
+        default:
+          this.setState({ customState: "" });
       }
     });
 
